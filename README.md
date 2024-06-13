@@ -25,7 +25,7 @@ The challenge was to create a Tip Calculator app that allows users to view the o
 
 ### Links
 
-- [Solution URL](https://github.com/Manojgupta103/Manoj-Gupta-Profile.git)
+- [Solution URL](https://github.com/Manojgupta103/Tip-Calculator.git)
 - [Live Site URL](https://tip-calculator-manoj.vercel.app/)
 
 ## Built With
