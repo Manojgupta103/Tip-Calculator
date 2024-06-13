@@ -1,0 +1,123 @@
+.section{
+  display: flex;
+  background: #484548;
+  height: 100vh;
+  width: auto;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 30px;
+  color: white !important;
+  background-color: aqua;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 10px;
+  color: white !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+  width: 700px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.input{
+  display: flex;
+  position: absolute;
+  top: 0%;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  border-radius: 15px;
+}
+
+.input-box {
+  padding: 20px;
+  position: absolute;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  height: 10px;
+  width: 350px;
+  border-radius: 15px;
+  border: 1px solid #484548;
+  top: 25%;
+  right: 40%;
+  font-size: 20px;
+}
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.button{
+  position: absolute;
+  top: 25.5%;
+  left: 65%;
+  height: 50px;
+  width: 100px;
+  border-radius: 15px;
+  border: 1px solid #484548;
+  cursor: pointer;
+}
+
+.numbers {
+  display: block;
+  position: absolute;
+  right: 50%;
+  height: 330px;
+  width: 400px;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.numbers button {
+  width: 90px;
+  height: 70px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.numbers button:hover {
+  background-color: #eee;
+}
+
+.people-box {
+  position: absolute;
+  padding: 20px;
+  position: absolute;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  height: 10px;
+  width: 200px;
+  border-radius: 15px;
+  border: 1px solid #484548;
+  top: 80%;
+  font-size: 20px;
+}
