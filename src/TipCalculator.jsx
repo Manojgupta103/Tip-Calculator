@@ -3,7 +3,7 @@ import './TipCalculator.css';
 
 const TipCalculator = () => {
   const [bill, setBill] = useState(0);
-  const [tipPercent, setTipPercent] = useState(15);
+  const [tipPercent, setTipPercent] = useState("");
   const [numPeople, setNumPeople] = useState(1);
   const [customTip, setCustomTip] = useState('');
 
@@ -19,7 +19,7 @@ const TipCalculator = () => {
 
   const reset = () => {
     setBill(0);
-    setTipPercent(15);
+    setTipPercent("");
     setNumPeople(1);
     setCustomTip('');
   };
@@ -76,15 +76,15 @@ const TipCalculator = () => {
           <div className="output-group">
             <div className="output">
               <span>Tip Amount / person</span>
-              <span>${tipAmountPerPerson}</span>
+              <span>₹{tipAmountPerPerson}</span>
             </div>
             <div className="output">
               <span>Total / person</span>
-              <span>${totalPerPerson}</span>
+              <span>₹{totalPerPerson}</span>
             </div>
             <div className="output">
               <span>Final Amount</span>
-              <span>${finalAmount}</span>
+              <span>₹{finalAmount}</span>
             </div>
           </div>
           <button className="reset-button" onClick={reset}>RESET</button>

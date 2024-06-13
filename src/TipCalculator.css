@@ -1,124 +1,138 @@
 /* Reset some default browser styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #d2edf6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    max-width: 500px;
-    width: 100%;
-  }
-  
-  .calculator {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input-section {
-    margin-bottom: 20px;
-  }
-  
-  .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .tip-section label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  .tip-buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  
-  .tip-buttons button,
-  .tip-buttons input {
-    flex: 1 1 48%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .tip-buttons button.active,
-  .tip-buttons button:hover {
-    background-color: #26c0ab;
-    color: #fff;
-  }
-  
-  .tip-buttons input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .output-section {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .output-group {
-    margin-bottom: 20px;
-  }
-  
-  .output {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .output span {
-    color: #333;
-  }
-  
-  .reset-button {
-    padding: 10px;
-    background-color: #26c0ab;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .reset-button:hover {
-    background-color: #26a189;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 500px;
+  width: 90%;
+  max-width: 500px;
+  width: 100%;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: hsl(183, 100%, 15%);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid hsl(186, 14%, 43%);
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+.tip-section label {
+  display: block;
+  margin-bottom: 5px;
+  color: hsl(183, 100%, 15%);
+}
+
+.tip-buttons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.tip-buttons button,
+.tip-buttons input {
+  flex: 1 1 48%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tip-buttons button.active,
+.tip-buttons button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(0, 0%, 100%);
+}
+
+.tip-buttons input {
+  padding: 10px;
+  border: 1px solid hsl(186, 14%, 43%);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.output-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.output-group {
+  margin-bottom: 20px;
+}
+
+.output {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.output span {
+  color: hsl(183, 100%, 15%);
+}
+
+.reset-button {
+  padding: 10px;
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: hsl(172, 50%, 40%);
+}
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+.container {
+  max-width: 768px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+.container {
+  max-width: 1440px;
+}
+}
